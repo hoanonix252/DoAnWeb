@@ -1,0 +1,26 @@
+.body-content{
+
+    text-align:justify;
+    display: grid;
+    margin: auto;
+    flex-wrap: wrap;
+    margin-top: 160px; 
+    width: 90%;   
+    height: max-content; 
+
+}
+.images{
+    display: block;
+    margin: auto;
+    width: 600px;
+    max-width: 100%;
+}
+.bonus:hover{
+    color: red;
+}
+.bonus{
+    text-decoration: none;
+}
+.tittle, .image--tittle{
+    text-align: center;
+}

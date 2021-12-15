@@ -1,0 +1,40 @@
+.product__1{
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+}
+.product__image-1{
+    text-align: center;
+    margin-right: 15px;
+}
+@media screen and (max-width:  900px) {
+    .product__1{flex-direction: column;}
+}
+.button-detail button{
+    background-color: rgb(88, 240, 245);
+    color: black;
+    border-radius: 5px;
+    border-color:rgb(88, 240, 245); 
+    padding:10px ;
+    margin-left: 5px;
+    font-weight: bold;
+}
+.input__quantity{
+width: 50px;
+}
+.field__payment div{
+    margin-top: 10px;
+    display: flex;
+}
+.field__payment label{
+    flex-basis: 10%;
+}
+.product__1 hr{
+    border: 1px solid grey;
+    background-color: grey;
+    margin: 10px 5px;
+}
+.detail__header{
+    margin-bottom: 20px;
+}
+

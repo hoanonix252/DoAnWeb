@@ -1,0 +1,109 @@
+#shoppingcart
+{
+    color: #a83f3f;
+    font-weight: bold;
+}
+.process
+{
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 100px;
+}
+#table
+{
+    width: 100%;
+    text-align: center;
+}
+.table__layout
+{
+    margin-bottom: 40px;
+}
+#sanpham
+{
+    padding: 0px 50px 0px 50px;
+}
+#gia
+{
+    padding: 0px 30px 0px 30px;
+}
+#tamtinh
+{
+    padding: 0px 30px 0px 30px;
+    
+}
+.shoppingcart--info
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.info--payment
+{
+    width: 400px;
+}
+.payment--row
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.cart--button
+{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#Tieptucxemsp
+{
+    background-color: black;
+    color: white;
+    padding: 6px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#Capnhatgiohang
+{
+    background-color: #c4c4c4;
+    color: black;
+    padding: 6px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#tienhanhthanhtoan
+{
+    background-color: #c4c4c4;
+    color: black;
+    padding: 6px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+@media screen and (max-width: 1050px) 
+{
+    #table
+    {
+        width: 100%;
+    }
+    .shoppingcart--info
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .info--payment
+    {
+        width: 100%;
+    }
+    #break
+    {
+        margin-bottom: 50px;
+    }
+    .footer{
+        top:inherit;
+    }
+}

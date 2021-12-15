@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm</title>
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Product.css">
+</head>
+
+<body>
+    <div class="container">
+        <!--Header-->
+        <div class="header">
+            <div class="header-container">
+                <div class="toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div id="news">
+                    <span>Miễn phí vận chuyển </span> cho đơn hàng từ 600k
+
+                </div>
+                <div class="logo">
+                    <a href="./Homepage.html">MY CHOICE</a>
+                    
+                </div>
+                <div id="search">
+                    <form class="search-container">
+                        <input id="product" class="search__input" type="text" placeholder="Search..." name="search">
+                        <button type="button" onclick="location.href='./shoppingcart.html'" class="csw-btn-button" ><i class="fa fa-shopping-cart"></i></button>
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <!--Menu-->
+            <div class="menu">
+                <div>
+                    <nav>
+                        <ul id="main-menu">
+                            <li>
+                                <a href="./gioithieu.html">Giới thiệu </a>
+                            </li>
+                            <div class="menu--space">|</div>
+                            <li><a href="./Product_main.html">Sản phẩm <i class="fa fa-caret-down" style="padding:5px;"></i></a>
+                                <ul class="menu-dropdown">
+                                    <div>
+                                        <li><a href="./Product_cleanser.html">Sữa rửa mặt & Tẩy trang</a></li>
+                                        <li><a href="./Product_toner.html">Toner</a></li>
+                                        <li><a href="./Product_tdc.html">Loại bỏ tế bào chết</a></li>
+                                        <li><a href="./Product_moisturizing.html">Kem dưỡng ẩm</a></li>
+                                        <li><a href="./Product_sunscreen.html">Kem chống nắng</a></li>
+                                        <li><a href="./Product_mask.html">Mặt nạ</a></li>
+                                    </div>
+                                </ul>
+                            </li>
+                            <div class="menu--space">|</div>
+                            <li><a href="#thanhphan">Thành phần <i class="fa fa-caret-down"
+                                        style="padding:5px;"></i></a>
+                                <ul class="menu-dropdown">
+                                    <div>
+                                        <li><a href="./AHA.html">AHA</a></li>
+                                        <li><a href="./BHA.html">BHA</a></li>
+                                        <li><a href="./Vitamin C.html">Vitamin C</a></li>
+                                    </div>
+                                </ul>
+                            </li>
+                            <div class="menu--space">|</div>
+                            <li><a href="#kienthuc">Kiến thức chăm sóc da <i class="fa fa-caret-down"
+                                        style="padding:5px;"></i></a>
+                                <ul class="menu-dropdown">
+                                    <div>
+                                        <li><a href="./chamsocdathuong.html">Chăm sóc da thường</a></li>
+                                        <li><a href="./chamsocdamun.html">Chăm sóc da mụn</a></li>
+                                        <li><a href="./chamsocdahonhop.html">Chăm sóc da hỗn hợp</a></li>
+                                        <li><a href="./chamsocdanhaycam.html">Chăm sóc da nhạy cảm</a></li>
+                                        <li><a href="./chamsocdakho.html">Chăm sóc da khô</a></li>
+                                        <li><a href="./chamsocdadau.html">Chăm sóc da dầu</a></li>
+                                    </div>
+                                </ul>
+                            </li>
+                            <div class="menu--space">|</div>
+                            <li><a href="./khuyenmai.html" target="_parent">Khuyến mãi</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nội dung -->
+        <div class="main">
+            <table>
+                <tr>
+                    <td class="product_filter">
+                        <h3>THƯƠNG HIỆU</h3>
+                        <hr>
+                        <div><a href="#">PAULA'S CHOICE</a></div>
+                        <div><a href="#">LAROCHE POSAY</a></div>
+                        <div><a href="#">BIODERMA</a></div>
+                        <br>
+                        <h3>KÍCH THƯỚC</h3>
+                        <hr>
+                        <div><a href="#">FULL SIZE</a></div>
+                        <div><a href="#">TRIALSIZE</a></div>
+                    </td>
+                    <td>
+                        <div class="product-container">
+                            <div class="product-box">
+                                 <div class="img">
+                                    <a href="./Detail_srmLR.html"> <img src="../images/SRM_LR.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <p>Gel Rửa Mặt Effaclar Purifying Foaming Gel 400ml</p>
+                                    <p>449.000 VNĐ</p>
+                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                        value="Thêm vào giỏ">
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="img">
+                                   <a href="./Detail_srmPL1.html"><img src="../images/SRM_PL1.jpg" alt="">
+                                   </a>
+                                </div>
+                                <div class="product">
+                                    <p>Sữa rửa mặt cho da mụn Clear Pore Normalizing Cleanser</p>
+                                    <p>550.000 VNĐ</p>
+                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                        value="Thêm vào giỏ">
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="img">
+                                    <a href="./Detail_srmPL2.html"><img src="../images/SRM_PL2.jpg" alt=""></a>
+                                </div>
+                                <div class="product">
+                                    <p>Sữa rửa mặt nhẹ nhàng Perfectly Natural Cleansing </p>
+                                    <p>635.000 VNĐ</p>
+                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                        value="Thêm vào giỏ">
+                                </div>
+                            </div>
+            
+                            <div class="product-box">
+                                <div class="img">
+                                    <img src="../images/SRM_BI.jpg" alt="">
+                                </div>
+                                <div class="product">
+                                    <p>Gel Rửa Mặt Bioderma da mụn 200ml</p>
+                                    <p>430.000 VNĐ</p>
+                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                        value="Thêm vào giỏ">
+                                </div>
+                            </div>
+            
+                            <div class="product-box">
+                                <div class="img">
+                                    <a href="./Detail_ttBI.html"><img src="../images/TT_BI.jpg" alt=""></a>
+                                </div>
+                                <div class="product">
+                                    <p>Dung dịch tẩy trang và làm sạch Bioderma</p>
+                                    <p>495.000 VNĐ</p>
+                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                        value="Thêm vào giỏ">
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="img">
+                                   <img src="../images/Toner_BI.jpg" alt=""></div>
+                                <div class="product">
+                                    <p>Dung dịch cân bằng da Bioderma Sebium Lotion</p>
+                                    <p>466.000 VNĐ</p>
+                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                        value="Thêm vào giỏ">
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="img">
+                                    <img src="../images/Toner_LR.jpg" alt=""></div>
+                                <div class="product">
+                                    <p>Nước cân bằng LaRoche Posay Effaclar Astringent</p>
+                                    <p>385.000 VNĐ</p>
+                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                        value="Thêm vào giỏ">
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="img">
+                                    <img src="../images/Toner_PL.jpg" alt=""></div>
+                                <div class="product">
+                                    <p>Nước cân bằng Skin Balancing Pore-Reducing Toner</p>
+                                    <p>690.000 VNĐ</p>
+                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                        value="Thêm vào giỏ">
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="img">
+                                    <a href="./Detail_tdcLR.html"><img src="../images/TDC_LR.jpg" alt=""></a>
+                                </div>
+                                <div class="product">
+                                    <p>Gel tẩy tế bào chết  Ultra Fine Scrub Sensitive Skin 50ml</p>
+                                    <p>359.000 VNĐ</p>
+                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                        value="Thêm vào giỏ">
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="img">
+                                    <img src="../images/TDC_PL1.jpg" alt="">
+                                    </div>
+                                <div class="product">
+                                    <p>Dung dịch loại bỏ tế bào chết chứa 2% salicylic acid </p>
+                                    <p>899.000 VNĐ</p>
+                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                        value="Thêm vào giỏ">
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="img">
+                                    <a href="./Detail_tdcPL2.html"><img src="../images/TDC_PL2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <p>Tẩy tế bào chết Treatment 10% AHA </p>
+                                    <p>1.100.000 VNĐ</p>
+                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                        value="Thêm vào giỏ">
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="img">
+                                    <a href="./Detail_tdcPL3.html"><img src="../images/TDC_PL3.jpg" alt=""></a>
+                                </div>
+                                <div class="product">
+                                    <p> Dung dịch loại bỏ tế bào chết chứa 2% SA daily </p>
+                                    <p>1.300.000 VNĐ</p>
+                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                        value="Thêm vào giỏ">
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="img">
+                                   <img src="../images/KDA_BI1.jpg" alt=""></div>
+                                <div class="product">
+                                    <p>Kem dưỡng giảm mụn chuyên sâu cho da mụn nhẹ đến vừa Bioderma Sébium Global</p>
+                                    <p>390.000 VNĐ</p>
+                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                        value="Thêm vào giỏ">
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="img">
+                                    <img src="../images/KDA_BI2.jpg" alt=""></div>
+                                <div class="product">
+                                    <p>Kem dưỡng ẩm cho da khô nhạy cảm,da khô và rất khô Bioderma Atoderm Crème</p>
+                                    <p>410.000 VNĐ</p>
+                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                        value="Thêm vào giỏ">
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="img">
+                                   <img src="../images/KDA_LA.png" alt=""></div>
+                                <div class="product">
+                                    <p>Kem Dưỡng Làm Dịu Và Phục Hồi Làn Da B5 Soothing Repairing Balm 100ml</p>
+                                    <p>479.000 VNĐ</p>
+                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                        value="Thêm vào giỏ">
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="img">
+                                   <img src="../images/KDA_LA2.png" alt=""></div>
+                                <div class="product">
+                                    <p>Sữa dưỡng giúp làm dịu & bảo vệ cho da quá nhạy cảm Toleriane Sensitive 40ml</p>
+                                    <p>495.000 VNĐ</p>
+                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                        value="Thêm vào giỏ">
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="img">
+                                   <img src="../images/KDA_PL1.jpg" alt=""></div>
+                                <div class="product">
+                                    <p>Sản phẩm Clear Oil-Free Moisturizer dành cho da nhạy cảm </p>
+                                    <p>899.000 VNĐ</p>
+                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                        value="Thêm vào giỏ">
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="img">
+                                   <img src="../images/KDA_PL2.jpg" alt=""></div>
+                                <div class="product">
+                                    <p>Kem dưỡng ẩm Probiotic Nutrient Móiturizer phù hợp với mọi loại da</p>
+                                    <p>1.390.000 VNĐ</p>
+                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                        value="Thêm vào giỏ">
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="img">
+                                   <img src="../images/MN_BI.jpg" alt=""></div>
+                                <div class="product">
+                                    <p>Bioderma Sensibio Mask – Mặt Nạ Dưỡng Ẩm Sâu Dành Cho Da Nhạy Cảm </p>
+                                    <p>520.000 VNĐ</p>
+                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                        value="Thêm vào giỏ">
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="img">
+                                   <img src="../images/MN_LA.png" alt=""></div>
+                                <div class="product">
+                                    <p>Mặt nạ bùn làm sạch sâu, giảm mụn Effaclar Sebo-Controlling Mask</p>
+                                    <p>595.000 VNĐ</p>
+                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                        value="Thêm vào giỏ">
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="img">
+                                   <img src="../images/MN_PL.jpg" alt=""></div>
+                                <div class="product">
+                                    <p>Mặt nạ Recovery Hydrating cung cấp ẩm sâu dành cho da khô đến rất khô </p>
+                                    <p>830.000 VNĐ</p>
+                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                        value="Thêm vào giỏ">
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="img">
+                                   <img src="../images/KCN_BI.jpg" alt=""></div>
+                                <div class="product">
+                                    <p>Kem chống nắng giảm bóng nhờn Bioderma Photoderm MAX Aquafluide SPF 50+</p>
+                                    <p>450.000 VNĐ</p>
+                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                        value="Thêm vào giỏ">
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="img">
+                                   <img src="../images/KCN_LA1.png" alt=""></div>
+                                <div class="product">
+                                    <p>Kem chống nắng cho da dầu, dễ nổi mụn La Roche-Posay Anthelios Anti-Imperfection</p>
+                                    <p>420.000 VNĐ</p>
+                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                        value="Thêm vào giỏ">
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="img">
+                                   <img src="../images/KCN_LA2.jpg" alt=""></div>
+                                <div class="product">
+                                    <p>Kem chống nắng kiểm soát bóng nhờn và bảo vệ da SPF 50+ Anthelios Dry Touch</p>
+                                    <p>399.000 VNĐ</p>
+                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                        value="Thêm vào giỏ">
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="img">
+                                   <img src="../images/KCN_PL2.jpg" alt=""></div>
+                                <div class="product">
+                                    <p>Kem chống nắng Resist  Youth-Extending Daily Hydrating Fluid SPF 50</p>
+                                    <p>950.000 VNĐ</p>
+                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                        value="Thêm vào giỏ">
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="img">
+                                   <img src="../images/KCN_PL1.jpg" alt=""></div>
+                                <div class="product">
+                                    <p>Sản phẩm Extra Care non-greasy SPF 50 giàu chất chống lão hóa</p>
+                                    <p>650.000 VNĐ</p>
+                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                        value="Thêm vào giỏ">
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+       
+        <!--Footer-->
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer-item1">
+                    <h4>BẠN CÓ PHẢI CHUYÊN GIA Y TẾ?</h4>
+                    <p>Liên hệ chúng tôi </p>
+                    <hr width="120px">
+                </div>
+                <div>
+                    <h4>TRỢ GIÚP & LIÊN HỆ</h4>
+                    <p>Liên hệ chúng tôi</p>
+                    <hr width="120px">
+                </div>
+                <div style="max-width: 600px;">MY CHOICE là một thương hiệu được xây dựng dựa trên thấu hiểu sinh học
+                    và an
+                    toàn da liễu nhằm bảo vệ hệ sinh thái và sức khỏe làn da. Mang lại hiệu quả lâu dài.</div>
+            </div>
+            <div class="footer-item2">
+                <h3>HỆ THỐNG SHOWROOM</h3>
+                <hr style="width: 230px;">
+                <h4>HỒ CHÍ MINH</h4>
+                <p>Địa chỉ: 669 QL1A, khu phố 3, Thủ Đức, Thành phố Hồ Chí Minh</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

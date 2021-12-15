@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết giỏ hàng </title>
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/checkoutdetails.css">
+</head>
+
+<body>
+    <div class="container">
+        <!--Header-->
+        <div class="header">
+            <div class="header-container">
+                <div class="toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div id="news">
+                    <span>Miễn phí vận chuyển </span> cho đơn hàng từ 600k
+
+                </div>
+                <div class="logo">
+                    <a href="./Homepage.html">MY CHOICE</a>
+                    
+                </div>
+                <div id="search">
+                    <form class="search-container">
+                        <input id="product" class="search__input" type="text" placeholder="Search..." name="search">
+                        <button type="button" onclick="location.href='./shoppingcart.html'" class="csw-btn-button" ><i class="fa fa-shopping-cart"></i></button>
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <!--Menu-->
+            <div class="menu">
+                <div>
+                    <nav>
+                        <ul id="main-menu">
+                            <li>
+                                <a href="./gioithieu.html">Giới thiệu </a>
+                            </li>
+                            <div class="menu--space">|</div>
+                            <li><a href="./Product_main.html">Sản phẩm <i class="fa fa-caret-down" style="padding:5px;"></i></a>
+                                <ul class="menu-dropdown">
+                                    <div>
+                                        <li><a href="./Product_cleanser.html">Sữa rửa mặt & Tẩy trang</a></li>
+                                        <li><a href="./Product_toner.html">Toner</a></li>
+                                        <li><a href="./Product_tdc.html">Loại bỏ tế bào chết</a></li>
+                                        <li><a href="./Product_moisturizing.html">Kem dưỡng ẩm</a></li>
+                                        <li><a href="./Product_sunscreen.html">Kem chống nắng</a></li>
+                                        <li><a href="./Product_mask.html">Mặt nạ</a></li>
+                                    </div>
+                                </ul>
+                            </li>
+                            <div class="menu--space">|</div>
+                            <li><a href="#thanhphan">Thành phần <i class="fa fa-caret-down"
+                                        style="padding:5px;"></i></a>
+                                <ul class="menu-dropdown">
+                                    <div>
+                                        <li><a href="./AHA.html">AHA</a></li>
+                                        <li><a href="./BHA.html">BHA</a></li>
+                                        <li><a href="./Vitamin C.html">Vitamin C</a></li>
+                                    </div>
+                                </ul>
+                            </li>
+                            <div class="menu--space">|</div>
+                            <li><a href="#kienthuc">Kiến thức chăm sóc da <i class="fa fa-caret-down"
+                                        style="padding:5px;"></i></a>
+                                <ul class="menu-dropdown">
+                                    <div>
+                                        <li><a href="./chamsocdathuong.html">Chăm sóc da thường</a></li>
+                                        <li><a href="./chamsocdamun.html">Chăm sóc da mụn</a></li>
+                                        <li><a href="./chamsocdahonhop.html">Chăm sóc da hỗn hợp</a></li>
+                                        <li><a href="./chamsocdanhaycam.html">Chăm sóc da nhạy cảm</a></li>
+                                        <li><a href="./chamsocdakho.html">Chăm sóc da khô</a></li>
+                                        <li><a href="./chamsocdadau.html">Chăm sóc da dầu</a></li>
+                                    </div>
+                                </ul>
+                            </li>
+                            <div class="menu--space">|</div>
+                            <li><a href="./khuyenmai.html" target="_parent">Khuyến mãi</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Nội dung -->
+        <div class="main">
+            <div class="process">
+                SHOPPING CART
+                <i class="fas fa-angle-right"></i>
+                <span id="checkoutdetails">
+                    CHECKOUT DETAILS
+                </span>
+                <i class="fas fa-angle-right"></i>
+                ORDER COMPLETE
+            </div>
+            <hr style="margin-bottom: 15px;">
+            <div>
+                <label  for="voucher"><h3 id="inputlabel">ĐIỀN MÃ GIẢM GIÁ (NẾU CÓ):</h3> </label>
+                <div class="voucher">
+                    <input type="text" name="" id="voucher">
+                    <div id="apdung" style="text-align: center;">
+                        <button id="apdungbutton">ÁP DỤNG</button>
+                        
+                    </div>
+                    
+
+                </div>
+            </div>
+            <hr style="margin-top: 15px; margin-bottom: 15px;">
+            <div id="details__layout">
+                <div class="input--payment__layout">
+                    <div class="label--layout">
+                        <label  for=""><h3>THÔNG TIN THANH TOÁN</h3> </label>
+                    </div>
+                    
+                    <div class="input--payment__row">
+                        <div style="margin-right: 150px;">
+                            <label for="ho"><h3>HỌ *</h3></label>
+                            <input class="input--payment" type="text">
+                        </div>
+                        <div>
+                            <label for="ten"><h3>TÊN *</h3></label>
+                            <input class="input--payment" type="text">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="birth"><h3>NGÀY SINH *</h3></label>
+                            <input class="input--payment" type="date">
+                    </div>
+                    <div class="input--payment__row">
+                        <div style="margin-right: 150px;">
+                            <label for="tinhthanh"><h3>TỈNH THÀNH *</h3></label>
+                            <input class="input--payment" type="text">
+                        </div>
+                        <div>
+                            <label for="phuongxa"><h3>PHƯỜNG XÃ *</h3></label>
+                            <input class="input--payment" type="text">
+                        </div>
+                    </div>
+                    <div class="input--payment__row">
+                        <div style="margin-right: 150px;">
+                            <label for="sdt"><h3>SỐ ĐIỆN THOẠI *</h3></label>
+                            <input class="input--payment" type="text" >
+                        </div>
+                        <div>
+                            <label for="email"><h3>EMAIL *</h3></label>
+                            <input class="input--payment" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div id="yourorder">
+                    <h3 style="text-align: center; margin-top: 20px; margin-bottom: 20px;">ĐƠN HÀNG CỦA BẠN</h3>
+                    <table style="width: 100%">
+                        <th>
+                            SẢN PHẨM
+                        </th>
+                        <th>
+                            TẠM TÍNH
+                        </th>
+                    </table>
+                    <hr>
+                    <div class="payment--info__row">
+                        <label for="">TẠM TÍNH</label>
+                        <output>XXX.XXX VNĐ</output>
+                    </div>
+                    <hr>
+                    <div class="payment--info__row">
+                        <label for="">TỔNG</label>
+                        <output>XXX.XXX VNĐ</output>
+                    </div>
+                    <hr>
+                    <div>
+                        <input type="radio" name="paymentmethod">Giao hàng và thu tiền tận nơi
+                    </div>
+                    <hr>
+                    <div>
+                        <input type="radio" name="paymentmethod">Thanh toán qua VNPAY
+                    </div>
+                    <hr>
+                    <div>
+                        <input type="radio" name="paymentmethod">Thanh toán bằng ví MoMo
+                    </div>
+                    <div id="policy">
+                        Tôi đã đọc và đồng ý với <a href="#" style="text-decoration: none;">điều khoản và điều kiện</a> của website *
+                    </div>
+                    <div style="text-align: center; margin-top: 20px;"> 
+                        <button id="dathang" type="button" onclick="location.href='./ordercomplete.html'">ĐẶT HÀNG</button>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+
+
+        <!--Footer-->
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer-item1">
+                    <h4>BẠN CÓ PHẢI CHUYÊN GIA Y TẾ?</h4>
+                    <p>Liên hệ chúng tôi </p>
+                    <hr width="120px">
+                </div>
+                <div>
+                    <h4>TRỢ GIÚP & LIÊN HỆ</h4>
+                    <p>Liên hệ chúng tôi</p>
+                    <hr width="120px">
+                </div>
+                <div style="max-width: 600px;">MY CHOICE là một thương hiệu được xây dựng dựa trên thấu hiểu sinh học
+                    và an
+                    toàn da liễu nhằm bảo vệ hệ sinh thái và sức khỏe làn da. Mang lại hiệu quả lâu dài.</div>
+            </div>
+            <div class="footer-item2">
+                <h3>HỆ THỐNG SHOWROOM</h3>
+                <hr style="width: 230px;">
+                <h4>HỒ CHÍ MINH</h4>
+                <p>Địa chỉ: 669 QL1A, khu phố 3, Thủ Đức, Thành phố Hồ Chí Minh</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
