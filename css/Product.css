@@ -12,7 +12,7 @@ a{
   .product-container{
     display: flex; 
     justify-content:space-around; 
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
   }
   .product-box{
     width: 200px;
@@ -22,7 +22,7 @@ a{
 .img
 {
     text-align: center;
-    line-height: 200px;
+    height: 200px;
 }
 .product
 {

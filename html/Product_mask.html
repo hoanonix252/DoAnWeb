@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,9 +10,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/Product.css">
+    <script type="text/javascript" src="../js/angular.js"></script>
+    <script>
+        let app = angular.module("angularApp", [])
+        app.controller("ProductController", ($scope, $http) => {
+            $http({
+                method: "GET",
+                url: "../data/products.json",
+            }).then(
+                function success(response) {
+                    $scope.products = response.data;
+                },
+                function error(response) {
+                    $scope.error = response.statusText;
+                });
+        })
+    </script>
 </head>
-
-<body>
+<body ng-app="angularApp">
     <div class="container">
         <!--Header-->
         <div class="header">
@@ -27,12 +41,13 @@
                 </div>
                 <div class="logo">
                     <a href="./Homepage.html">MY CHOICE</a>
-                    
+
                 </div>
                 <div id="search">
                     <form class="search-container">
                         <input id="product" class="search__input" type="text" placeholder="Search..." name="search">
-                        <button type="button" onclick="location.href='./shoppingcart.html'" class="csw-btn-button" ><i class="fa fa-shopping-cart"></i></button>
+                        <button type="button" onclick="location.href='./shoppingcart.html'" class="csw-btn-button"><i
+                                class="fa fa-shopping-cart"></i></button>
                         <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
                 </div>
@@ -47,7 +62,8 @@
                                 <a href="./gioithieu.html">Giới thiệu </a>
                             </li>
                             <div class="menu--space">|</div>
-                            <li><a href="./Product_main.html">Sản phẩm <i class="fa fa-caret-down" style="padding:5px;"></i></a>
+                            <li><a href="./Product_main.html">Sản phẩm <i class="fa fa-caret-down"
+                                        style="padding:5px;"></i></a>
                                 <ul class="menu-dropdown">
                                     <div>
                                         <li><a href="./Product_cleanser.html">Sữa rửa mặt & Tẩy trang</a></li>
@@ -109,45 +125,27 @@
                         <div><a href="#">TRIALSIZE</a></div>
                     </td>
                     <td>
-                        <div class="product-container">
-                            <div class="product-box">
-                                <div class="img">
-                                   <img src="../images/MN_BI.jpg" alt=""></div>
-                                <div class="product">
-                                    <p>Bioderma Sensibio Mask – Mặt Nạ Dưỡng Ẩm Sâu Dành Cho Da Nhạy Cảm </p>
-                                    <p>520.000 VNĐ</p>
-                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
-                                        value="Thêm vào giỏ">
+                        <div class="product-container" ng-controller="ProductController">
+                            <div class="product-box" ng-repeat="p in products |filter: { PhanLoai: 'mask' }" >
+                                <div>
+                                    <div class="img">
+                                        <img ng-src="../images/{{p.Hinh}}.jpg" alt="">
+                                    </div>
+                                    <div class="product">
+                                        <p>{{p.Ten}}</p>
+                                        <p>{{p.Gia}}</p>
+                                        <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                            value="Thêm vào giỏ">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="product-box">
-                                <div class="img">
-                                   <img src="../images/MN_LA.png" alt=""></div>
-                                <div class="product">
-                                    <p>Mặt nạ bùn làm sạch sâu, giảm mụn Effaclar Sebo-Controlling Mask</p>
-                                    <p>595.000 VNĐ</p>
-                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
-                                        value="Thêm vào giỏ">
-                                </div>
-                            </div>
-                            <div class="product-box">
-                                <div class="img">
-                                   <img src="../images/MN_PL.jpg" alt=""></div>
-                                <div class="product">
-                                    <p>Mặt nạ Recovery Hydrating cung cấp ẩm sâu dành cho da khô đến rất khô </p>
-                                    <p>830.000 VNĐ</p>
-                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
-                                        value="Thêm vào giỏ">
-                                </div>
-                            </div>
-                           
                         </div>
                     </td>
                 </tr>
             </table>
         </div>
 
-       
+
         <!--Footer-->
         <div class="footer" style="margin-top: 45px;">
             <div class="footer-container">

@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loại bỏ tế bào chết</title>
+    <title>Tẩy da chết</title>
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/Product.css">
+    <script type="text/javascript" src="../js/angular.js"></script>
+    <script>
+        let app = angular.module("angularApp", [])
+        app.controller("ProductController", ($scope, $http) => {
+            $http({
+                method: "GET",
+                url: "../data/products.json",
+            }).then(
+                function success(response) {
+                    $scope.products = response.data;
+                },
+                function error(response) {
+                    $scope.error = response.statusText;
+                });
+        })
+    </script>
 </head>
-
-<body>
+<body ng-app="angularApp">
     <div class="container">
         <!--Header-->
         <div class="header">
@@ -27,12 +41,13 @@
                 </div>
                 <div class="logo">
                     <a href="./Homepage.html">MY CHOICE</a>
-                    
+
                 </div>
                 <div id="search">
                     <form class="search-container">
                         <input id="product" class="search__input" type="text" placeholder="Search..." name="search">
-                        <button type="button" onclick="location.href='./shoppingcart.html'" class="csw-btn-button" ><i class="fa fa-shopping-cart"></i></button>
+                        <button type="button" onclick="location.href='./shoppingcart.html'" class="csw-btn-button"><i
+                                class="fa fa-shopping-cart"></i></button>
                         <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
                 </div>
@@ -47,7 +62,8 @@
                                 <a href="./gioithieu.html">Giới thiệu </a>
                             </li>
                             <div class="menu--space">|</div>
-                            <li><a href="./Product_main.html">Sản phẩm <i class="fa fa-caret-down" style="padding:5px;"></i></a>
+                            <li><a href="./Product_main.html">Sản phẩm <i class="fa fa-caret-down"
+                                        style="padding:5px;"></i></a>
                                 <ul class="menu-dropdown">
                                     <div>
                                         <li><a href="./Product_cleanser.html">Sữa rửa mặt & Tẩy trang</a></li>
@@ -109,57 +125,27 @@
                         <div><a href="#">TRIALSIZE</a></div>
                     </td>
                     <td>
-                        <div class="product-container">
-                          
-                            <div class="product-box">
-                                <div class="img">
-                                    <a href="./Detail_tdcLR.html"><img src="../images/TDC_LR.jpg" alt=""></a></div>
-                                <div class="product">
-                                    <p>Gel tẩy tế bào chết  Ultra Fine Scrub Sensitive Skin 50ml</p>
-                                    <p>359.000 VNĐ</p>
-                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
-                                        value="Thêm vào giỏ">
-                                </div>
-                            </div>
-                            <div class="product-box">
-                                <div class="img">
-                                    <img src="../images/TDC_PL1.jpg" alt="">
+                        <div class="product-container" ng-controller="ProductController">
+                            <div class="product-box" ng-repeat="p in products |filter: { PhanLoai: 'tdc' }" >
+                                <div>
+                                    <div class="img">
+                                        <img ng-src="../images/{{p.Hinh}}.jpg" alt="">
                                     </div>
-                                <div class="product">
-                                    <p>Dung dịch loại bỏ tế bào chết chứa 2% salicylic acid </p>
-                                    <p>899.000 VNĐ</p>
-                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
-                                        value="Thêm vào giỏ">
+                                    <div class="product">
+                                        <p>{{p.Ten}}</p>
+                                        <p>{{p.Gia}}</p>
+                                        <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                            value="Thêm vào giỏ">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="product-box">
-                                <div class="img">
-                                    <a href="./Detail_tdcPL2.html"><img src="../images/TDC_PL2.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="product">
-                                    <p>Tẩy tế bào chết Treatment 10% AHA </p>
-                                    <p>1.100.000 VNĐ</p>
-                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
-                                        value="Thêm vào giỏ">
-                                </div>
-                            </div>
-                            <div class="product-box">
-                                <div class="img">
-                                    <a href="./Detail_tdcPL3.html"><img src="../images/TDC_PL3.jpg" alt=""></a></div>
-                                <div class="product">
-                                    <p> Dung dịch loại bỏ tế bào chết chứa 2% SA daily </p>
-                                    <p>1.300.000 VNĐ</p>
-                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
-                                        value="Thêm vào giỏ">
-                                </div>
-                            </div>
-                            
                         </div>
                     </td>
                 </tr>
             </table>
         </div>
+
+
         <!--Footer-->
         <div class="footer" style="margin-top: 45px;">
             <div class="footer-container">
@@ -173,7 +159,7 @@
                     <p>Liên hệ chúng tôi</p>
                     <hr width="120px">
                 </div>
-                <div style="max-width: 600px;">MY’S CHOICE là một thương hiệu được xây dựng dựa trên thấu hiểu sinh học
+                <div style="max-width: 600px;">MY CHOICE là một thương hiệu được xây dựng dựa trên thấu hiểu sinh học
                     và an
                     toàn da liễu nhằm bảo vệ hệ sinh thái và sức khỏe làn da. Mang lại hiệu quả lâu dài.</div>
             </div>

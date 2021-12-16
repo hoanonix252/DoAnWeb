@@ -11,10 +11,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="stylesheet" href="../css/Homepage.css">
     <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="../js/angular.js"></script>
+    <script>
+        let app = angular.module("angularApp", [])
+        app.controller("ProductController", ($scope, $http) => {
+            $http({
+                method: "GET",
+                url: "../data/bestseller.json",
+            }).then(
+                function success(response) {
+                    $scope.products = response.data;
+                },
+                function error(response) {
+                    $scope.error = response.statusText;
+                });
+        })
 
+    </script>
 </head>
 
-<body>
+<body ng-app="angularApp">
     <div class="container">
         <!--Header-->
         <div class="header">
@@ -104,68 +120,23 @@
             <hr style="margin: auto;" width="50%">
 
             <h2 class="main-text">SẢN PHẨM BÁN CHẠY</h2>
-            <div class="product-container">
+            <div class="product-container" ng-controller="ProductController">
 
-                <div class="product-box">
-                    <div class="img">
-                        <a href="./Detail_srmPL1.html"><img src="../images/SRM_PL1.jpg" alt=""></a>
-                    </div>
-                    <div class="product">
-                        <p>Sữa rửa mặt cho da mụn Clear Pore Normalizing Cleanser</p>
-                        <p>550.000 VNĐ</p>
-                        <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
-                            value="Thêm vào giỏ">
-                    </div>
-                </div>
-
-                <div class="product-box">
-                    <div class="img">
-                        <a href="./Detail_ttBI.html"><img src="../images/TT_BI.jpg" alt=""></a>
-                    </div>
-                    <div class="product">
-                        <p>Dung dịch tẩy trang và làm sạch Bioderma</p>
-                        <p>495.000 VNĐ</p>
-                        <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
-                            value="Thêm vào giỏ">
-                    </div>
-                </div>
-
-                <div class="product-box">
-                    <div class="img">
-                        <a href="./Detail_tdcLR.html"><img src="../images/TDC_LR.jpg" alt=""></a>
-                    </div>
-                    <div class="product">
-                        <p>Gel tẩy tế bào chết Ultra Fine Scrub Sensitive Skin 50ml</p>
-                        <p>359.000 VNĐ</p>
-                        <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
-                            value="Thêm vào giỏ">
-                    </div>
-                </div>
-
-                <div class="product-box">
-                    <div class="img">
-                        <a href="./Detail_tdcPL2.html"><img src="../images/TDC_PL2.jpg" alt=""></a>
-                    </div>
-                    <div class="product">
-                        <p>Tẩy tế bào chết Treatment 10% AHA </p>
-                        <p>1.100.000 VNĐ</p>
-                        <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
-                            value="Thêm vào giỏ">
-                    </div>
-                </div>
-
-                <div class="product-box">
-                    <div class="img">
-                        <a href="./Detail_tdcPL3.html"><img src="../images/TDC_PL3.jpg" alt="">
-                    </div></a>
-                    <div class="product">
-                        <p> Dung dịch loại bỏ tế bào chết chứa 2% SA daily </p>
-                        <p>1.300.000 VNĐ</p>
-                        <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
-                            value="Thêm vào giỏ">
+                <div class="product-box" ng-repeat="p in products">
+                    <div>
+                        <div class="img">
+                            <img ng-src="../images/{{p.Hinh}}.jpg" alt="">
+                        </div>
+                        <div class="product">
+                            <p>{{p.Ten}}</p>
+                            <p>{{p.Gia}}</p>
+                            <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                value="Thêm vào giỏ">
+                        </div>
                     </div>
                 </div>
             </div>
+            
             <div class="text main-text">
                 <h2>QUY TRÌNH CHĂM SÓC DA BAO GỒM:</h2>
             </div>
