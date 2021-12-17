@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,6 +28,7 @@
         })
     </script>
 </head>
+
 <body ng-app="angularApp">
     <div class="container">
         <!--Header-->
@@ -118,59 +120,61 @@
                         <div><a href="#">PAULA'S CHOICE</a></div>
                         <div><a href="#">LAROCHE POSAY</a></div>
                         <div><a href="#">BIODERMA</a></div>
-                        <br>
-                        <h3>KÍCH THƯỚC</h3>
-                        <hr>
-                        <div><a href="#">FULL SIZE</a></div>
-                        <div><a href="#">TRIALSIZE</a></div>
+                        
                     </td>
                     <td>
                         <div class="product-container" ng-controller="ProductController">
-                            <div class="product-box" ng-repeat="p in products |filter: { PhanLoai: 'mask' }" >
-                                <div>
-                                    <div class="img">
-                                        <img ng-src="../images/{{p.Hinh}}.jpg" alt="">
+                            <div class="product-box" ng-repeat="p in products |filter: { PhanLoai: 'mask' }">
+                                <a href="ProductDetail.html?hinh={{p.Hinh}}">
+                                    <div>
+                                        <div class="img">
+                                            <img ng-src="../images/{{p.Hinh}}.jpg" alt="">
+                                        </div>
+                                        <div class="product">
+                                            <p>{{p.Ten}}</p>
+                                            <p>{{p.Gia}}</p>
+
+                                        </div>
                                     </div>
-                                    <div class="product">
-                                        <p>{{p.Ten}}</p>
-                                        <p>{{p.Gia}}</p>
-                                        <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
-                                            value="Thêm vào giỏ">
-                                    </div>
+                                </a>
+                                <div class="product-button__layout">
+                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                        value="Thêm vào giỏ">
                                 </div>
                             </div>
                         </div>
-                    </td>
-                </tr>
-            </table>
+        </div>
+        </td>
+        </tr>
+        </table>
+    </div>
+
+
+    <!--Footer-->
+    <div class="footer" style="margin-top: 45px;">
+        <div class="footer-container">
+            <div class="footer-item1">
+                <h4>BẠN CÓ PHẢI CHUYÊN GIA Y TẾ?</h4>
+                <p>Liên hệ chúng tôi </p>
+                <hr width="120px">
+            </div>
+            <div>
+                <h4>TRỢ GIÚP & LIÊN HỆ</h4>
+                <p>Liên hệ chúng tôi</p>
+                <hr width="120px">
+            </div>
+            <div style="max-width: 600px;">MY CHOICE là một thương hiệu được xây dựng dựa trên thấu hiểu sinh học
+                và an
+                toàn da liễu nhằm bảo vệ hệ sinh thái và sức khỏe làn da. Mang lại hiệu quả lâu dài.</div>
+        </div>
+        <div class="footer-item2">
+            <h3>HỆ THỐNG SHOWROOM</h3>
+            <hr style="width: 230px;">
+            <h4>HỒ CHÍ MINH</h4>
+            <p>Địa chỉ: 669 QL1A, khu phố 3, Thủ Đức, Thành phố Hồ Chí Minh</p>
         </div>
 
-
-        <!--Footer-->
-        <div class="footer" style="margin-top: 45px;">
-            <div class="footer-container">
-                <div class="footer-item1">
-                    <h4>BẠN CÓ PHẢI CHUYÊN GIA Y TẾ?</h4>
-                    <p>Liên hệ chúng tôi </p>
-                    <hr width="120px">
-                </div>
-                <div>
-                    <h4>TRỢ GIÚP & LIÊN HỆ</h4>
-                    <p>Liên hệ chúng tôi</p>
-                    <hr width="120px">
-                </div>
-                <div style="max-width: 600px;">MY CHOICE là một thương hiệu được xây dựng dựa trên thấu hiểu sinh học
-                    và an
-                    toàn da liễu nhằm bảo vệ hệ sinh thái và sức khỏe làn da. Mang lại hiệu quả lâu dài.</div>
-            </div>
-            <div class="footer-item2">
-                <h3>HỆ THỐNG SHOWROOM</h3>
-                <hr style="width: 230px;">
-                <h4>HỒ CHÍ MINH</h4>
-                <p>Địa chỉ: 669 QL1A, khu phố 3, Thủ Đức, Thành phố Hồ Chí Minh</p>
-            </div>
-
-        </div>
+    </div>
 
 
     </div>

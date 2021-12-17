@@ -5,14 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chi tiết sữa rửa mặt PL</title>
+    <title>Chi tiết sản phẩm</title>
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="stylesheet" href="../CSS/product-detail.css">
+    <script type="text/javascript" src="../js/angular.js"></script>
+    <script>
+        var urlparams= new URLSearchParams(location.search);
+        var HinhSP = urlparams.get("hinh")
+    </script>
+    <script>
+        let app = angular.module("angularApp", [])
+        app.controller("ProductController", ($scope, $http) => {
+            $http({
+                method: "GET",
+                url: "../data/products.json",
+            }).then(
+                function success(response) {
+                    $scope.selectedProduct = response.data.find(value=>value.Hinh==HinhSP);
+                },
+                function error(response) {
+                    $scope.error = response.statusText;
+                });
+        })
+    </script>
+
 </head>
 
-<body>
+<body ng-app="angularApp">
     <div class="container">
         <!--Header-->
         <!--Header-->
@@ -93,48 +114,30 @@
     </div>
 
         <!-- Nội dung -->
-        <div class="main">
-            <div class="product__1">
-                <div class="product__image-1"><img src="../images/SRM_PL1+.jpg" alt=""></div>
+        <div class="main" >
+            <div class="product__1"  ng-controller="ProductController">
+                <div class="product__image-1">
+                    <img ng-src="../images/{{selectedProduct.HinhFull}}.jpg" alt="">
+                </div>
                 <div class="product__description-1">
                     <div class="detail__header">
-                        <h1>Sữa rửa mặt cho da mụn Clear Pore Normalizing Cleanser</h1>
-                        <h2>550.000<sup>VNĐ</sup> </h2>
+                        <h1>{{selectedProduct.Ten}}</h1>
+                        <h2>{{selectedProduct.Gia}} </h2>
                     </div>
                     <p>
                     <h3>Mô tả</h3>
-                    <p> &emsp;Sữa rửa mặt dạng gel dịu nhẹ, nhẹ nhàng làm sạch mọi bụi bẩn, dầu thừa và lớp trang điểm
-                        trên khuôn mặt (trừ trường hợp dùng mascara lâu trôi). Sản phẩm là bước đầu tiên trong chu trình
-                        chăm sóc da mỗi buổi sáng và tối. Sữa rửa mặt được tối ưu hóa để vừa làm sạch sâu cho da vừa duy
-                        trì hàng rào bảo vệ tự nhiên của da, không làm mất lớp nhờn bảo vệ và duy trì độ pH thích hợp
-                        cho làn da khỏe mạnh. <br>
-                        Thích hợp cho làn da có lỗ chân lông to, đang nổi mụn, mụn trứng cá, mụn đầu đen. </p>
+                    <p>{{selectedProduct.ChiTiet.MoTa}} </p>
                     <h4> ĐẶC ĐIỂM VÀ CÔNG DỤNG</h4>
-                    <p> - Sữa rửa mặt dạng gel dịu nhẹ, nhẹ nhàng làm sạch mọi bụi bẩn, dầu thừa và lớp trang điểm trên
-                        khuôn mặt (trừ trường hợp dùng mascara lâu trôi).<br>
-                        - Không gây khô da và không làm mất lớp nhờn bảo vệ tự nhiên của da.<br>
-                        - Có chứa triclosan kháng khuẩn nhẹ.<br>
-                        - Thích hợp cho mọi loại da, đặc biệt là da mụn, kể cả da nhạy cảm.<br>
-                        - pH khoảng 6.0. Duy trì pH cân bằng của da.<br>
-                        - 100% không có chất tạo màu và tạo hương, mùi thơm nhẹ là mùi của một chất làm sạch chiết xuất
-                        từ dầu dừa.</p>
-                    <h4> CÁCH DÙNG</h4>
-                    - Làm ướt mặt, lấy 1 lượng vừa đủ sữa rửa mặt thoa nhẹ nhàng theo chuyển động tròn đều, sau đó rửa
-                    sạch lại bằng nước. <br>
-                    - Có thể lặp lại một lần nữa để loại sạch sâu lớp trang điểm.<br>
-                    - Sử dụng vào buổi sáng và buổi tối hoặc khi muốn làm sạch da.<br>
+                    <p>
+                        {{selectedProduct.ChiTiet.CongDung}}
+                    </p>
+                    <br>
 
                     <h4> LOẠI DA PHÙ HỢP</h4>
-                    Clear Pore Normalizing Cleanser dành cho mọi loại da đang có vấn đề về mụn
+                    {{selectedProduct.ChiTiet.LoaiSP}}
                     </p>
                     <hr>
                     <div class="field__payment">
-                        <div><label for="size">Size</label>
-                            <select name="size" id="size">
-                                <option value="Fullsize">Fullsize</option>
-                                <option value="100ml">100ml</option>
-                            </select>
-                        </div>
                         <div>
                             <label for="quantity">Số lượng</label>
                             <input type="button" value="-">

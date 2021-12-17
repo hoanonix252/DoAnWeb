@@ -120,23 +120,22 @@
                         <div><a href="#">PAULA'S CHOICE</a></div>
                         <div><a href="#">LAROCHE POSAY</a></div>
                         <div><a href="#">BIODERMA</a></div>
-                        <br>
-                        <h3>KÍCH THƯỚC</h3>
-                        <hr>
-                        <div><a href="#">FULL SIZE</a></div>
-                        <div><a href="#">TRIALSIZE</a></div>
                     </td>
                     <td>
                         <div class="product-container" ng-controller="ProductController">
 
                             <div class="product-box" ng-repeat="p in products">
                                 <div>
-                                    <div class="img">
-                                        <img ng-src="../images/{{p.Hinh}}.jpg" alt="">
-                                    </div>
-                                    <div class="product">
-                                        <p>{{p.Ten}}</p>
-                                        <p>{{p.Gia}}</p>
+                                    <a href="ProductDetail.html?hinh={{p.Hinh}}">
+                                        <div class="img">
+                                            <img ng-src="../images/{{p.Hinh}}.jpg" alt="">
+                                        </div>
+                                        <div class="product">
+                                            <p>{{p.Ten}}</p>
+                                            <p>{{p.Gia}}</p>
+                                        </div>
+                                    </a>
+                                    <div class="product-button__layout">
                                         <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
                                             value="Thêm vào giỏ">
                                     </div>
