@@ -49,7 +49,7 @@
                 </div>
                 <div id="search">
                     <form class="search-container">
-                        <input id="product" class="search__input" type="text" placeholder="Search..." name="search">
+                        <input id="product" class="search__input" type="text" placeholder="Search..." name="search" ng-model="search.Ten">
                         <button type="button" onclick="location.href='./shoppingcart.html'" class="csw-btn-button" ><i class="fa fa-shopping-cart"></i></button>
                         <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
@@ -117,14 +117,14 @@
                     <td class="product_filter">
                         <h3>THƯƠNG HIỆU</h3>
                         <hr>
-                        <div><a href="#">PAULA'S CHOICE</a></div>
-                        <div><a href="#">LAROCHE POSAY</a></div>
-                        <div><a href="#">BIODERMA</a></div>
+                        <div><a href="product_paulachoice.html">PAULA'S CHOICE</a></div>
+                        <div><a href="product_larocheposay.html">LAROCHE POSAY</a></div>
+                        <div><a href="product_bioderma.html">BIODERMA</a></div>
                     </td>
                     <td>
                         <div class="product-container" ng-controller="ProductController">
 
-                            <div class="product-box" ng-repeat="p in products">
+                            <div class="product-box" ng-repeat="p in products|filter:search">
                                 <div>
                                     <a href="ProductDetail.html?hinh={{p.Hinh}}">
                                         <div class="img">
@@ -173,11 +173,14 @@
             </div>
 
         </div>
-
-
     </div>
-
-
 </body>
-
+<script>
+    function getUrl() {
+        const params = new URLSearchParams(window.location.search);
+        return params;
+    }
+    var name1 = getUrl().get("searchpro"); //searchpro là name input từ trang tonerz
+    document.getElementById("product").value = name1; //product là id input từ trang main
+</script>
 </html>

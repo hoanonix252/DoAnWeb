@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+!<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mặt nạ </title>
+    <title>LAROCHE POSAY</title>
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
@@ -46,8 +46,8 @@
 
                 </div>
                 <div id="search">
-                    <form class="search-container" action="./Product_main.html" method="get">
-                        <input id="product" class="search__input" type="text" placeholder="Search..." name="searchpro" ng-model="search.Ten">
+                    <form class="search-container">
+                        <input id="product" class="search__input" type="text" placeholder="Search..." name="search">
                         <button type="button" onclick="location.href='./shoppingcart.html'" class="csw-btn-button"><i
                                 class="fa fa-shopping-cart"></i></button>
                         <button type="submit"><i class="fa fa-search"></i></button>
@@ -124,7 +124,7 @@
                     </td>
                     <td>
                         <div class="product-container" ng-controller="ProductController">
-                            <div class="product-box" ng-repeat="p in products | filter:search |filter: { PhanLoai: 'mask' }">
+                            <div class="product-box" ng-repeat="p in products |filter: { ThuongHieu: 'LAROCHE POSAY' }">
                                 <a href="ProductDetail.html?hinh={{p.Hinh}}">
                                     <div>
                                         <div class="img">
