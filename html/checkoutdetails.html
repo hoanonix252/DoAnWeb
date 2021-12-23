@@ -32,7 +32,10 @@
                 <div id="search">
                     <form class="search-container">
                         <input id="product" class="search__input" type="text" placeholder="Search..." name="search">
-                        <button type="button" onclick="location.href='./shoppingcart.html'" class="csw-btn-button" ><i class="fa fa-shopping-cart"></i></button>
+                        <button type="button" onclick="location.href='./shoppingcart.html'" class="csw-btn-button">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span>0</span>
+                        </button>
                         <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
                 </div>
@@ -170,12 +173,12 @@
                     <hr>
                     <div class="payment--info__row">
                         <label for="">TẠM TÍNH</label>
-                        <output>XXX.XXX VNĐ</output>
+                        <span id="cartCost">XXX.XXX VNĐ</span>
                     </div>
                     <hr>
                     <div class="payment--info__row">
                         <label for="">TỔNG</label>
-                        <output>XXX.XXX VNĐ</output>
+                        <span id="totalCost">XXX.XXX VNĐ</span>
                     </div>
                     <hr>
                     <div>
@@ -233,5 +236,8 @@
 
 
 </body>
+<script src="../js/ThemVaoGio.js" async></script>
+<script src="../js/checkout-details.js"></script>
+
 
 </html>

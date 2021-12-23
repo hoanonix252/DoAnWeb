@@ -2,26 +2,31 @@
     {
         "Hinh": "SRM_PL1",
         "Ten": "Sữa rửa mặt cho da mụn Clear Pore Normalizing Cleanser",
-        "Gia": "550000"
+        "Gia": 550000,
+        "inCart": 0
     },
     {
         "Hinh": "MN_LA",
         "Ten": "Mặt nạ bùn làm sạch sâu, giảm mụn Effaclar Sebo-Controlling Mask",
-        "Gia": "595000"
+        "Gia": 595000,
+        "inCart": 0
     },
     {
         "Hinh": "TDC_LR",
         "Ten": "Gel tẩy tế bào chết Ultra Fine Scrub Sensitive Skin 50ml",
-        "Gia": "359000"
+        "Gia": 359000,
+        "inCart": 0
     },
     {
         "Hinh": "TDC_PL2",
         "Ten": "Tẩy tế bào chết Treatment 10% AHA",
-        "Gia": "1100000"
+        "Gia": 1100000,
+        "inCart": 0
     },
     {
         "Hinh": "KCN_BI",
         "Ten": "Kem chống nắng Bioderma Photoderm SPF 50+",
-        "Gia": "450000"
+        "Gia": 450000,
+        "inCart": 0
     }
 ]

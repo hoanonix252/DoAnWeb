@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/Product.css">
     <script type="text/javascript" src="../js/angular.js"></script>
+
     <script>
         let app = angular.module("angularApp", [])
         app.controller("ProductController", ($scope, $http) => {
@@ -27,7 +28,6 @@
                     $scope.error = response.statusText;
                 });
         })
-
     </script>
 </head>
 
@@ -49,8 +49,10 @@
                 <div id="search">
                     <form class="search-container">
                         <input id="product" class="search__input" type="text" placeholder="Search..." name="search">
-                        <button type="button" onclick="location.href='./shoppingcart.html'" class="csw-btn-button"><i
-                                class="fa fa-shopping-cart"></i></button>
+                        <button type="button" onclick="location.href='./shoppingcart.html'" class="csw-btn-button">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span>0</span>
+                        </button>
                         <button type="submit"><i class="fa fa-search"></i></button>
 
                     </form>
@@ -131,18 +133,17 @@
                             </div>
                             <div class="product">
                                 <p>{{p.Ten}}</p>
-                                <p>{{p.Gia}}</p>
-
+                                <p>{{p.Gia}} VNĐ</p>
                             </div>
                         </div>
                     </a>
                     <div class="product-button__layout">
-                        <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                        <input class="product-button themvaogio" type="submit" name="themvaogio" id="themvaogio"
                             value="Thêm vào giỏ">
                     </div>
                 </div>
             </div>
-            
+
             <div class="text main-text">
                 <h2>QUY TRÌNH CHĂM SÓC DA BAO GỒM:</h2>
             </div>
@@ -222,7 +223,7 @@
 
         </div>
     </div>
-
+    <script src="../js/ThemVaoGio.js" async></script>
 
 </body>
 

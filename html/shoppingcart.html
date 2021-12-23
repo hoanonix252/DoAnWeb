@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/shoppingcart.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="../js/angular.js"></script>
 </head>
 
 <body>
@@ -32,7 +34,10 @@
             <div id="search">
                 <form class="search-container">
                     <input id="product" class="search__input" type="text" placeholder="Search..." name="search">
-                    <button type="button" onclick="location.href='./shoppingcart.html'" class="csw-btn-button" ><i class="fa fa-shopping-cart"></i></button>
+                    <button type="button" onclick="location.href='./shoppingcart.html'" class="csw-btn-button" >
+                        <i class="fa fa-shopping-cart"></i> 
+                        <span>0</span>
+                    </button>
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
@@ -97,46 +102,29 @@
                 <span id="shoppingcart">SHOPPING CART</span> <i class="fas fa-angle-right"></i> CHECKOUT DETAILS <i class="fas fa-angle-right"></i> ORDER COMPLETE
             </div>
             <div class="shoppingcart--info">
-                <div class="table__layout">
-                    <table id="table"  >
-
-                        <th id="sanpham">SẢN PHẨM</th>
-                        <th id="gia">GIÁ</th>
-                        <th id="soluong">SỐ LƯỢNG</th>
-                        <th id="tamtinh">TẠM TÍNH</th>
+                <div class="products-container">
+                    <div class="product--header">
+                        <h5 class="product-title">PRODUCT</h5>
+                        <H5 class="price">PRICE</H5>
+                        <h5 class="quantity">QUANTITY</h5>
+                        <h5 class="total">TOTAL</h5>
+                    </div>
+                    <div class="products">
                         
-                        <tr>
-                            <td>a</td>
-                            <td>a</td>
-                            <td>a</td>
-                            <td>a</td>
-                        </tr>
-                        <tr>
-                            <td>a</td>
-                            <td>a</td>
-                            <td>a</td>
-                            <td>a</td>
-                        </tr>
-                        <tr>
-                            <td>a</td>
-                            <td>a</td>
-                            <td>a</td>
-                            <td>a</td>
-                        </tr>
-                    </table>
+                    </div>
                     <div class="cart--button">
                         <button id="Tieptucxemsp" type="button" onclick="location.href='./Product_main.html'">Tiếp tục xem sản phẩm</button>
-                        <button id="Capnhatgiohang" type="button" onclick="location.href='./shoppingcart.html'">Cập nhật giỏ hàng</button>
+                        <button id="Capnhatgiohang" type="button" onclick="location.reload()">Cập nhật giỏ hàng</button>
                     
                     </div>
                 </div>
                 <hr id="break">
                 <div class="info--payment">
-                    <h2>CỘNG GIỎ HÀNG</h2>
+                    <!-- <h2>CỘNG GIỎ HÀNG</h2>
                     <hr>
                     <div class="payment--row">
                         <label for="">TẠM TÍNH</label>
-                        <output>XXX.XXX VNĐ</output>
+                        <output></output>
                     </div>
                     <hr>
                     <div class="payment--row">
@@ -146,12 +134,12 @@
                     <hr>
                     <div class="payment--row">
                         <label for="">TỔNG</label>
-                        <output>XXX.XXX VNĐ</output>
+                        <output></output>
                     </div>
                     <div class="cart--button">
                        
                         <button id="tienhanhthanhtoan" type="button" onclick="location.href='./checkoutdetails.html'">TIẾN HÀNH THANH TOÁN</button>
-                    </div>
+                    </div> -->
                     
                 </div>
             </div>
@@ -185,7 +173,7 @@
 
 
     </div>
-
+    <script src="../js/ThemVaoGio.js" async></script>
 
 </body>
 

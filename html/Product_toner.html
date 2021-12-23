@@ -44,10 +44,12 @@
 
                 </div>
                 <div id="search">
-                    <form class="search-container" action="./Product_main.html" method="get">
-                        <input id="product" class="search__input" type="text" placeholder="Search..." name="searchpro" ng-model="search.Ten">
-                        <button type="button" onclick="location.href='./shoppingcart.html'" class="csw-btn-button"><i
-                                class="fa fa-shopping-cart"></i></button>
+                    <form class="search-container">
+                        <input id="product" class="search__input" type="text" placeholder="Search..." name="search">
+                        <button type="button" onclick="location.href='./shoppingcart.html'" class="csw-btn-button">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span>0</span>
+                        </button>
                         <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
                 </div>
@@ -121,7 +123,7 @@
                     </td>
                     <td>
                         <div class="product-container" ng-controller="ProductController">
-                            <div class="product-box" ng-repeat="p in products |filter: { PhanLoai: 'toner' }| filter:search" >
+                            <div class="product-box" ng-repeat="p in products |filter: { PhanLoai: 'toner' }" >
                                 <a href="ProductDetail.html?hinh={{p.Hinh}}">
                                     <div>
                                         <div class="img">
@@ -129,13 +131,13 @@
                                         </div>
                                         <div class="product">
                                             <p>{{p.Ten}}</p>
-                                            <p>{{p.Gia}}</p>
+                                            <p>{{p.Gia}} VNĐ</p>
 
                                         </div>
                                     </div>
                                 </a>
                                 <div class="product-button__layout">
-                                    <input class="product-button" type="submit" name="themvaogio" id="themvaogio"
+                                    <input class="product-button themvaogio" type="submit" name="themvaogio" id="themvaogio"
                                         value="Thêm vào giỏ">
                                 </div>
                             </div>
@@ -174,7 +176,7 @@
 
 
     </div>
-
+    <script src="../js/ThemVaoGio.js" async></script>
 
 </body>
 

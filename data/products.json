@@ -3,7 +3,7 @@
         "Hinh": "MN_BI",
         "HinhFull": "MN_BI+",
         "Ten": "Bioderma Sensibio Mask - Mặt Nạ Dưỡng Ẩm Sâu Dành Cho Da Nhạy Cảm",
-        "Gia": "520.000 VNĐ",
+        "Gia": "520.000",
         "ThuongHieu": "BIODERMA",
         "PhanLoai": "mask",
         "ChiTiet": {
@@ -16,7 +16,7 @@
         "Hinh": "MN_LA",
         "HinhFull": "MN_LA+",
         "Ten": "Mặt nạ bùn làm sạch sâu, giảm mụn Effaclar Sebo-Controlling Mask",
-        "Gia": "595.000 VNĐ",
+        "Gia": "595.000",
         "ThuongHieu": "LAROCHE POSAY",
         "PhanLoai": "mask",
         "ChiTiet": {
@@ -29,7 +29,7 @@
         "Hinh": "SRM_LR",
         "HinhFull": "SRM_LR+",
         "Ten": "Gel Rửa Mặt Effaclar Purifying Foaming Gel 400ml",
-        "Gia": "449.000 VNĐ",
+        "Gia": "449.000",
         "ThuongHieu": "LAROCHE POSAY",
         "PhanLoai": "cleanser",
         "ChiTiet": {
@@ -42,8 +42,8 @@
         "Hinh": "SRM_PL1",
         "HinhFull": "SRM_PL1+",
         "Ten": "Sữa rửa mặt cho da mụn Clear Pore Normalizing Cleanser",
-        "Gia": "550.000 VNĐ",
-        "ThuongHieu": "PAULAS CHOICE",
+        "Gia": "550.000",
+        "ThuongHieu": "PAULA'S CHOICE",
         "PhanLoai": "cleanser",
         "ChiTiet": {
             "MoTa": "Sữa rửa mặt dạng gel dịu nhẹ, nhẹ nhàng làm sạch mọi bụi bẩn, dầu thừa và lớp trang điểm trên khuôn mặt (trừ trường hợp dùng mascara lâu trôi). Sản phẩm là bước đầu tiên trong chu trình chăm sóc da mỗi buổi sáng và tối. Sữa rửa mặt được tối ưu hóa để vừa làm sạch sâu cho da vừa duy trì hàng rào bảo vệ tự nhiên của da, không làm mất lớp nhờn bảo vệ và duy trì độ pH thích hợp cho làn da khỏe mạnh.",
@@ -55,7 +55,7 @@
         "Hinh": "KDA_BI1",
         "HinhFull": "KDA_BI1+",
         "Ten": "Kem dưỡng giảm mụn chuyên sâu cho da mụn nhẹ đến vừa Bioderma Sébium Global",
-        "Gia": "390.000 VNĐ",
+        "Gia": "390.000",
         "ThuongHieu": "BIODERMA",
         "PhanLoai": "moisturizing",
         "ChiTiet": {
@@ -68,7 +68,7 @@
         "Hinh": "KDA_BI2",
         "HinhFull": "KDA_BI2+",
         "Ten": "Kem dưỡng ẩm cho da khô nhạy cảm,da khô và rất khô Bioderma Atoderm Crème",
-        "Gia": "410.000 VNĐ",
+        "Gia": "410.000",
         "ThuongHieu": "BIODERMA",
         "PhanLoai": "moisturizing",
         "ChiTiet": {
@@ -81,7 +81,7 @@
         "Hinh": "KCN_BI",
         "HinhFull": "KCN_BI+",
         "Ten": "Kem chống nắng giảm bóng nhờn Bioderma Photoderm MAX Aquafluide SPF 50+",
-        "Gia": "450.000 VNĐ",
+        "Gia": "450.000",
         "ThuongHieu": "BIODERMA",
         "PhanLoai": "sunscreen",
         "ChiTiet": {
@@ -94,7 +94,7 @@
         "Hinh": "KCN_LA1",
         "HinhFull": "KCN_LA1+",
         "Ten": "Kem chống nắng cho da dầu, dễ nổi mụn La Roche-Posay Anthelios Anti-Imperfection",
-        "Gia": "420.000 VNĐ",
+        "Gia": "420.000",
         "ThuongHieu": "LAROCHE POSAY",
         "PhanLoai": "sunscreen",
         "ChiTiet": {
@@ -107,7 +107,7 @@
         "Hinh": "TDC_LR",
         "HinhFull": "TDC_LR+",
         "Ten": "Gel tẩy tế bào chết Ultra Fine Scrub Sensitive Skin 50ml",
-        "Gia": "359.000 VNĐ",
+        "Gia": "359.000",
         "ThuongHieu": "LAROCHE POSAY",
         "PhanLoai": "tdc",
         "ChiTiet": {
@@ -120,8 +120,8 @@
         "Hinh": "TDC_PL2",
         "HinhFull": "TDC_PL2+",
         "Ten": "Tẩy tế bào chết Treatment 10% AHA",
-        "Gia": "1.100.000 VNĐ",
-        "ThuongHieu": "PAULAS CHOICE",
+        "Gia": "1.100.000",
+        "ThuongHieu": "PAULA'S CHOICE",
         "PhanLoai": "tdc",
         "ChiTiet": {
             "MoTa": "Sản phẩm được ví như loại “cocktail” tẩy da chết siêu đậm đặc giúp làm mịn và mờ đi những tổn hại có thể nhìn thấy được do ánh nắng mặt trời gây ra và những dấu hiệu lão hóa khác trên làn da. Sản phẩm giúp lấy lại sự rạng rỡ, trẻ trung một cách rõ ràng chỉ với 1 lần sử dụng.",
@@ -133,7 +133,7 @@
         "Hinh": "Toner_BI",
         "HinhFull": "Toner_BI+",
         "Ten": "Dung dịch cân bằng da Bioderma Sebium Lotion",
-        "Gia": "466.000 VNĐ",
+        "Gia": "466.000",
         "ThuongHieu": "BIODERMA",
         "PhanLoai": "toner",
         "ChiTiet": {
@@ -146,7 +146,7 @@
         "Hinh": "Toner_LR",
         "HinhFull": "Toner_LR+",
         "Ten": "Nước cân bằng LaRoche Posay Effaclar Astringent",
-        "Gia": "385.000 VNĐ",
+        "Gia": "385.000",
         "ThuongHieu": "LAROCHE POSAY",
         "PhanLoai": "toner",
         "ChiTiet": {

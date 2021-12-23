@@ -9,16 +9,19 @@
     font-size: x-large;
     margin-bottom: 100px;
 }
-#table
+/* #table
 {
     width: 100%;
     text-align: center;
-}
-.table__layout
+} */
+
+
+/* .table__layout
 {
     margin-bottom: 40px;
-}
-#sanpham
+} */
+
+/* #sanpham
 {
     padding: 0px 50px 0px 50px;
 }
@@ -30,7 +33,75 @@
 {
     padding: 0px 30px 0px 30px;
     
+} */
+/* ---------------CART--------------- */
+.products-container
+{
+    width: 40%;
+    justify-content: space-around;
+    margin:  0 auto;
+    margin-top: 15px;
+    /* background-color: lightgreen; */
+    margin-bottom: 40px;
 }
+.products-container ion-icon
+{
+    font-size: 25px;
+    color: lightgreen;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.product--header
+{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+    margin: 0 auto;
+}
+.product-title
+{
+    width: 45%;
+    border-bottom: 1px solid lightgray;
+}
+.price
+{
+    width: 15%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+.quantity
+{
+    width: 30%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+.total
+{
+    width: 10%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around;
+    padding-bottom: 10px 0; */
+}
+.products
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#break
+{
+    margin-right: 20px;
+}
+
+
 .shoppingcart--info
 {
     display: flex;
@@ -86,9 +157,13 @@
 }
 @media screen and (max-width: 1050px) 
 {
-    #table
+    /* #table
     {
         width: 100%;
+    } */
+    .products-container
+    {
+        width: 80%;
     }
     .shoppingcart--info
     {

@@ -19,8 +19,12 @@
     margin-left: 5px;
     font-weight: bold;
 }
-.input__quantity{
-width: 50px;
+.input-quantity
+{
+    width: 40px; 
+    height: 36.8px; 
+    line-height: 36.8px; 
+    text-align: center;
 }
 .field__payment div{
     margin-top: 10px;
