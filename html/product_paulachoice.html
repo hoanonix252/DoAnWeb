@@ -1,116 +1,97 @@
-!
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAULA'S CHOICE </title>
-    <link rel="stylesheet" href="../css/layout.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/Product.css">
-    <script type="text/javascript" src="../js/angular.js"></script>
-    <script>
-        let app = angular.module("angularApp", [])
-        app.controller("ProductController", ($scope, $http) => {
-            $http({
-                method: "GET",
-                url: "../data/products.json",
-            }).then(
-                function success(response) {
-                    $scope.products = response.data;
-                },
-                function error(response) {
-                    $scope.error = response.statusText;
-                });
-        })
-    </script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PAULA'S CHOICE</title>
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/Product.css" />
+  <script type="text/javascript" src="../js/angular.js"></script>
+  <script src="../js/product-list.js"></script>
+  <script src="../js/menu.js"></script>
 </head>
 
-<body ng-app="angularApp">
-    <div class="container">
-        <!--Header-->
-        <div class="header">
-            <div class="header-container">
-                <div class="toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
-                <div id="news">
-                    <span>Miễn phí vận chuyển </span> cho đơn hàng từ 600k
+<body ng-app="angularApp" ng-controller="ProductController">
+  <div class="container">
+    <!--Header-->
+    <div class="header">
+      <div class="header-container">
 
-                </div>
-                <div class="logo">
-                    <a href="./Homepage.html">MY CHOICE</a>
-
-                </div>
-                <div id="search">
-                    <form class="search-container">
-                        <input id="product" class="search__input" type="text" placeholder="Search..." name="search">
-                        <button type="button" onclick="location.href='./shoppingcart.html'" class="csw-btn-button"><i
-                                class="fa fa-shopping-cart"></i></button>
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
-            </div>
-            <hr>
+        <div id="news">
+          <span>Miễn phí vận chuyển </span> cho đơn hàng từ 600k
+        </div>
+        <div class="logo">
+          <a href="./Homepage.html">MY CHOICE</a>
+        </div>
+        <div id="search">
+          <form class="search-container">
+            <input id="product" class="search__input" type="text" placeholder="Search..." name="search" />
+            <button type="button" onclick="location.href='./shoppingcart.html'" class="csw-btn-button">
+              <i class="fa fa-shopping-cart"></i>
+              <span>0</span>
+            </button>
+            <button onclick="localStorage.setItem('search', document.getElementById('product').value); 
+                      location.href = 'Product_main.html'">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <hr />
             <!--Menu-->
-            <div class="menu">
+            <div class="menu" id="myMenu">
+                <div style="display: flex;">
+                    <div class="toggle" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <div id="newss">
+                        <span>Miễn phí vận chuyển </span> cho đơn hàng từ 600k
+                    </div>
+                </div>
                 <div>
-                    <nav>
-                        <ul id="main-menu">
-                            <li>
-                                <a href="./gioithieu.html">Giới thiệu </a>
-                            </li>
-                            <div class="menu--space">|</div>
-                            <li><a href="./Product_main.html">Sản phẩm <i class="fa fa-caret-down"
-                                        style="padding:5px;"></i></a>
-                                <ul class="menu-dropdown">
-                                    <div>
-                                        <li><a href="./Product_cleanser.html">Sữa rửa mặt & Tẩy trang</a></li>
-                                        <li><a href="./Product_toner.html">Toner</a></li>
-                                        <li><a href="./Product_tdc.html">Loại bỏ tế bào chết</a></li>
-                                        <li><a href="./Product_moisturizing.html">Kem dưỡng ẩm</a></li>
-                                        <li><a href="./Product_sunscreen.html">Kem chống nắng</a></li>
-                                        <li><a href="./Product_mask.html">Mặt nạ</a></li>
-                                    </div>
-                                </ul>
-                            </li>
-                            <div class="menu--space">|</div>
-                            <li><a href="#thanhphan">Thành phần <i class="fa fa-caret-down"
-                                        style="padding:5px;"></i></a>
-                                <ul class="menu-dropdown">
-                                    <div>
-                                        <li><a href="./AHA.html">AHA</a></li>
-                                        <li><a href="./BHA.html">BHA</a></li>
-                                        <li><a href="./Vitamin C.html">Vitamin C</a></li>
-                                    </div>
-                                </ul>
-                            </li>
-                            <div class="menu--space">|</div>
-                            <li><a href="#kienthuc">Kiến thức chăm sóc da <i class="fa fa-caret-down"
-                                        style="padding:5px;"></i></a>
-                                <ul class="menu-dropdown">
-                                    <div>
-                                        <li><a href="./chamsocdathuong.html">Chăm sóc da thường</a></li>
-                                        <li><a href="./chamsocdamun.html">Chăm sóc da mụn</a></li>
-                                        <li><a href="./chamsocdahonhop.html">Chăm sóc da hỗn hợp</a></li>
-                                        <li><a href="./chamsocdanhaycam.html">Chăm sóc da nhạy cảm</a></li>
-                                        <li><a href="./chamsocdakho.html">Chăm sóc da khô</a></li>
-                                        <li><a href="./chamsocdadau.html">Chăm sóc da dầu</a></li>
-                                    </div>
-                                </ul>
-                            </li>
-                            <div class="menu--space">|</div>
-                            <li><a href="./khuyenmai.html" target="_parent">Khuyến mãi</a></li>
-                        </ul>
-                    </nav>
+                    <ul id="main-menu">
+                        <li><a href="./gioithieu.html">Giới thiệu </a></li>
+
+                        <li><a href="./Product_main.html">Sản phẩm <i class="fa fa-caret-down" style="padding:5px;"></i></a>
+                            <ul class="menu-dropdown">
+                                <li><a href="./Product_cleanser.html">Sữa rửa mặt & Tẩy trang</a></li>
+                                <li><a href="./Product_toner.html">Toner</a></li>
+                                <li><a href="./Product_tdc.html">Loại bỏ tế bào chết</a></li>
+                                <li><a href="./Product_moisturizing.html">Kem dưỡng ẩm</a></li>
+                                <li><a href="./Product_sunscreen.html">Kem chống nắng</a></li>
+                                <li><a href="./Product_mask.html">Mặt nạ</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a href="#">Thành phần <i class="fa fa-caret-down" style="padding:5px;"></i></a>
+                            <ul class="menu-dropdown">
+                                <li><a href="./AHA.html">AHA</a></li>
+                                <li><a href="./BHA.html">BHA</a></li>
+                                <li><a href="./Vitamin C.html">Vitamin C</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#kienthuc">Kiến thức chăm sóc da <i class="fa fa-caret-down"
+                                    style="padding:5px;"></i></a>
+                            <ul class="menu-dropdown">
+                                <li><a href="./chamsocdathuong.html">Chăm sóc da thường</a></li>
+                                <li><a href="./chamsocdamun.html">Chăm sóc da mụn</a></li>
+                                <li><a href="./chamsocdahonhop.html">Chăm sóc da hỗn hợp</a></li>
+                                <li><a href="./chamsocdanhaycam.html">Chăm sóc da nhạy cảm</a></li>
+                                <li><a href="./chamsocdakho.html">Chăm sóc da khô</a></li>
+                                <li><a href="./chamsocdadau.html">Chăm sóc da dầu</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./khuyenmai.html">Khuyến mãi</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-
         <!-- Nội dung -->
         <div class="main">
             <table>

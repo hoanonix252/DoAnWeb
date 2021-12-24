@@ -7,7 +7,8 @@
 {
     text-align: center;
     font-size: x-large;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    margin-top: 10px;
 }
 .voucher
 {
@@ -27,7 +28,9 @@
 }
 #details__layout
 {
-    display: flex; flex-wrap: wrap; justify-content: space-around;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around;
 }
 .label--layout
 {
