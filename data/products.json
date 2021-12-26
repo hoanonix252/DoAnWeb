@@ -3,156 +3,173 @@
         "Hinh": "MN_BI",
         "HinhFull": "MN_BI+",
         "Ten": "Bioderma Sensibio Mask - Mặt Nạ Dưỡng Ẩm Sâu Dành Cho Da Nhạy Cảm",
-        "Gia": "520.000",
+        "Gia": "520000",
         "ThuongHieu": "BIODERMA",
         "PhanLoai": "mask",
         "ChiTiet": {
             "MoTa": "Tức tốc giảm ngay cảm giác nóng rát, ửng đỏ, da khô căng, đồng thời bổ sung dưỡng chất tăng cường sức đề kháng sinh học của làn da để khôi phục lại nét đẹp tươi trẻ, rạng rỡ cho da chỉ với dòng mặt nạ dưỡng ẩm sâu Bioderma Sensibio Mask của thương hiệu Bioderma - Pháp.",
             "LoaiSP": "Dành cho da khô, bong tróc trong quá trình sử dụng thuốc uống hoặc các phương pháp da liễu giảm mụn khác",
             "CongDung": "Dưỡng ẩm sâu và xoa dịu làn da tức thì. Kéo dài cảm giác dễ chịu, thoải mái cho làn da. Khôi phục độ sáng khỏe cho da."
-        }
+        },
+        "inCart": 0,
+        "bestseller": "bestseller"
     },
     {
         "Hinh": "MN_LA",
         "HinhFull": "MN_LA+",
         "Ten": "Mặt nạ bùn làm sạch sâu, giảm mụn Effaclar Sebo-Controlling Mask",
-        "Gia": "595.000",
+        "Gia": "595000",
         "ThuongHieu": "LAROCHE POSAY",
         "PhanLoai": "mask",
         "ChiTiet": {
             "MoTa": "Mặt nạ bùn làm sạch sâu, giảm mụn & giảm bóng nhờn La Roche-Posay Effaclar Sebo-Controlling Mask (100ml) chứa bùn khoáng giúp thông thoáng lỗ chân lông, loại bỏ bã nhờn dư thừa và các tạp chất (bụi, ô nhiễm), kiểm soát bóng nhờn & nhẹ nhàng thanh tẩy làn da.",
             "LoaiSP": "Phù hợp cho da dầu và da mụn nhạy cảm.",
             "CongDung": "Làm dịu, giảm sưng đỏ các vết sưng viêm do mụn. Kiểm soát bã nhờn, lấy đi bụi bẩn và các yếu tố ô nhiễm từ môi trường."
-        }
+        },
+        "inCart": 0
     },
     {
         "Hinh": "SRM_LR",
         "HinhFull": "SRM_LR+",
         "Ten": "Gel Rửa Mặt Effaclar Purifying Foaming Gel 400ml",
-        "Gia": "449.000",
+        "Gia": "449000",
         "ThuongHieu": "LAROCHE POSAY",
         "PhanLoai": "cleanser",
         "ChiTiet": {
             "MoTa": "Gel rửa mặt tạo bọt làm sạch & giảm nhờn cho da dầu nhạy cảm La Roche-Posay Effaclar Purifying Foaming Gel 400ml sẽ giúp ngăn ngừa và hỗ trợ giảm mụn tối đa với kết cấu dạng gel trong dễ dàng tạo bọt cùng công thức không chứa dầu, không cồn, an toàn cho làn da. Sản phẩm nhẹ nhàng làm sạch da từ sâu trong lỗ chân lông, loại bỏ bụi bẩn cùng dầu thừa, đồng thời giữ độ pH luôn ở mức cân bằng 5.5 nên sau khi rửa mặt xong, da không hề khô rít, căng rát, mà vẫn mềm mịn, sạch thoáng và đầy sức sống.",
             "LoaiSP": "Gel rửa mặt tạo bọt làm sạch giúp kiểm soát cho da dầu mụn.",
             "CongDung": "Nhẹ nhàng làm sạch bụi bẩn và bã nhờn dư thừa, hỗ trợ giảm mụn, mang lại làn da sạch và thoáng mát."
-        }
+        },
+        "inCart": 0,
+        "bestseller": "bestseller"
     },
     {
         "Hinh": "SRM_PL1",
         "HinhFull": "SRM_PL1+",
         "Ten": "Sữa rửa mặt cho da mụn Clear Pore Normalizing Cleanser",
-        "Gia": "550.000",
+        "Gia": "550000",
         "ThuongHieu": "PAULAS CHOICE",
         "PhanLoai": "cleanser",
         "ChiTiet": {
             "MoTa": "Sữa rửa mặt dạng gel dịu nhẹ, nhẹ nhàng làm sạch mọi bụi bẩn, dầu thừa và lớp trang điểm trên khuôn mặt (trừ trường hợp dùng mascara lâu trôi). Sản phẩm là bước đầu tiên trong chu trình chăm sóc da mỗi buổi sáng và tối. Sữa rửa mặt được tối ưu hóa để vừa làm sạch sâu cho da vừa duy trì hàng rào bảo vệ tự nhiên của da, không làm mất lớp nhờn bảo vệ và duy trì độ pH thích hợp cho làn da khỏe mạnh.",
             "LoaiSP": "Gel rửa mặt tạo bọt làm sạch giúp kiểm soát cho da dầu mụn.",
             "CongDung": "Nhẹ nhàng làm sạch bụi bẩn và bã nhờn dư thừa, hỗ trợ giảm mụn, mang lại làn da sạch và thoáng mát."
-        }
+        },
+        "inCart": 0,
+        "bestseller": "bestseller"
     },
     {
         "Hinh": "KDA_BI1",
         "HinhFull": "KDA_BI1+",
         "Ten": "Kem dưỡng giảm mụn chuyên sâu cho da mụn nhẹ đến vừa Bioderma Sébium Global",
-        "Gia": "390.000",
+        "Gia": "390000",
         "ThuongHieu": "BIODERMA",
         "PhanLoai": "moisturizing",
         "ChiTiet": {
             "MoTa": "Tất cả các loại da, kể cả da nhờn, đều cần được dưỡng ẩm vì da có thể bị thiếu nước và tiết dầu nhiều hơn hoặc khô căng khó chịu (do các liệu pháp da liễu, tác nhân bên ngoài...). Sebium Hydra có khả năng ngăn ngừa cảm giác khô căng và bong vẩy trong liệu pháp da liễu được kê đơn với Isotretinoin, giúp tăng cường độ dung nạp của làn da, điều tiết bã nhờn và ngăn ngừa bít lỗ chân lông.",
             "LoaiSP": "Dành cho da khô, bong tróc trong quá trình sử dụng thuốc uống hoặc các phương pháp da liễu giảm mụn khác",
             "CongDung": "Phát minh độc quyền Fluidactiv có tác dụng điều chỉnh chất lượng bã nhờn khỏe mạnh, ngăn ngừa bít lỗ chân lông và hình thành mụn. Các thành phần dưỡng ẩm (glycerine, vaseline và xylitol) và tái cấu trúc (ceramides) chống tróc vảy và khô căng suốt 24 giờ. Những thành phần làm dịu da hiệu quả (enoxolone, allantoin) làm giảm ửng đỏ và mang đến cảm giác dễ chịu cho làn da Phức hợp độc quyền D.A.F được chứng nhận tăng ngưỡng dung nạp và tăng cường đề kháng cho làn da nhạy cảm."
-        }
+        },
+        "inCart": 0,
+        "bestseller": "bestseller"
     },
     {
         "Hinh": "KDA_BI2",
         "HinhFull": "KDA_BI2+",
         "Ten": "Kem dưỡng ẩm cho da khô nhạy cảm,da khô và rất khô Bioderma Atoderm Crème",
-        "Gia": "410.000",
+        "Gia": "410000",
         "ThuongHieu": "BIODERMA",
         "PhanLoai": "moisturizing",
         "ChiTiet": {
             "MoTa": "Atoderm Intensive Baume nhanh chóng ngăn chặn cảm giác ngứa, làm dịu và dưỡng ẩm, giúp giảm kích ứng tức thì. Atoderm Intensive Baume hỗ trợ tái tạo hàng rào sinh học bảo vệ da nhờ hợp chất Lipigenium cấu thành từ các biolipid tự nhiên có trong lớp biểu bì. Khuyên dùng trong trường hợp đang phát bệnh và dùng hàng ngày giúp giảm tần suất tái phát triệu chứng và cải thiện tình trạng da. Công thức không chứa bất kì mùi hương hay gây kích ứng.",
             "LoaiSP": "Dành cho da khô, rất khô và da viêm da cơ địa bị ngứa. Dành cho người lớn, trẻ em và trẻ sơ sinh (trừ trẻ sinh non)",
             "CongDung": "Phát minh độc quyền Skin Barrier Therapy ngăn ngừa sự kết dính của vi khuẩn tụ cầu vàng (S. aureus) gây bệnh cho da. Lipigenium (các acid béo và biolipids) kích thích sản xuất lipid và protein, tái tạo hàng rào da khỏe mạnh. Bộ 3 PEA + β-sitosterol + Kẽm gluconate làm dịu cơn ngứa và giảm tình trạng kích ứng da nghiêm trọng. Glycerine và Vaseline kết hợp với phức hợp D.A.F giúp dưỡng ẩm, bảo vệ và củng cố ngưỡng dung nạp của da. Thẩm thấu nhanh và không gây cảm giác nhờn dính trên da."
-        }
+        },
+        "inCart": 0
     },
     {
         "Hinh": "KCN_BI",
         "HinhFull": "KCN_BI+",
         "Ten": "Kem chống nắng giảm bóng nhờn Bioderma Photoderm MAX Aquafluide SPF 50+",
-        "Gia": "450.000",
+        "Gia": "450000",
         "ThuongHieu": "BIODERMA",
         "PhanLoai": "sunscreen",
         "ChiTiet": {
             "MoTa": "Kem chống nắng giảm bóng nhờn cho mọi loại da Bioderma Photoderm MAX Aquafluide Teinte Claire SPF 50+ - 40ml (Màu Light) bảo vệ da khỏi tác hại của tia UVA/UVB với chỉ số chống nắng cao. Kết cấu lỏng nhẹ, với công thức kiểm soát dầu mang lại cảm giác khô thoáng, thấm nhanh và không để lại vệt trắng. Sản phẩm không gây kích ứng, không mùi hương, chống nước, phù hợp cho mọi loai da, đặc biệt là da nhạy cảm.",
             "LoaiSP": "Dành cho mọi loại da, đặc biệt là da nhạy cảm.",
             "CongDung": "Bảo vệ da trước tác động của ánh nắng với các màng lọc tia UVA/UVB có chỉ số chống nắng cao. Bản quyền sinh học CELLULAR BIOPROTECTION: kích hoạt hàng rào phòng thủ tự nhiên trên da, bảo vệ DNA tế bào, chống lão hóa sớm. Chỉ số chống tia UVB 50+ và chống tia UVA 26. Phức hợp độc quyền D.A.F được chứng nhận tăng ngưỡng dung nạp và tăng cường đề kháng cho làn da nhạy cảm."
-        }
+        },
+        "inCart": 0
     },
     {
         "Hinh": "KCN_LA1",
         "HinhFull": "KCN_LA1+",
         "Ten": "Kem chống nắng cho da dầu, dễ nổi mụn La Roche-Posay Anthelios Anti-Imperfection",
-        "Gia": "420.000",
+        "Gia": "420000",
         "ThuongHieu": "LAROCHE POSAY",
         "PhanLoai": "sunscreen",
         "ChiTiet": {
             "MoTa": "em chống nắng không màu kiểm soát dầu La Roche-Posay Anthelios XL Dry Touch Gel Cream SPF 50+ UVB & UVA 50ml là kem chống nắng dành cho da dầu giúp kiểm soát bóng nhờn và bảo vệ da trước tác hại từ ánh nắng & ô nhiễm, ngăn chặn các tác nhân gây lão hóa sớm. Sản phẩm có công thức chống thấm nước thích hợp dùng hàng ngày và cả những hoạt động ngoài trời, để bạn luôn tự tin tỏa sáng.",
             "LoaiSP": "Phù hợp với da nhạy cảm.",
             "CongDung": "Kết cấu dạng kem gel, thẩm thấu tức thì, mang lại cảm giác khô thoáng, không để lại vệt trắng. Kiểm soát bã nhờn & mồ hôi giúp mang đến một cảm giác “sạch” cho làn da đến 9h. Bảo vệ da trước những tác hại từ ánh nắng & ô nhiễm: lão hóa sớm, đốm nâu, kích ứng ánh nắng. Độ chống nắng cao nhất SPF 50+ bảo vệ da tối ưu dưới ánh nắng. Chống nắng phổ rộng với nhiều màng lọc tia UV bảo vệ da trước ngay cả tia UVA dài."
-        }
+        },
+        "inCart": 0,
+        "bestseller": "bestseller"
     },
     {
         "Hinh": "TDC_LR",
         "HinhFull": "TDC_LR+",
         "Ten": "Gel tẩy tế bào chết Ultra Fine Scrub Sensitive Skin 50ml",
-        "Gia": "359.000",
+        "Gia": "359000",
         "ThuongHieu": "LAROCHE POSAY",
         "PhanLoai": "tdc",
         "ChiTiet": {
             "MoTa": "Gel làm sạch tế bào c.hết cho da nhạy cảm La Roche-Posay Ultra Fine Scrub Sensitive Skin 50ml có công thức được lựa chọn kĩ càng với các thành phần làm sạch dịu nhẹ phù hợp cho da dầu và da mụn nhạy cảm.",
             "LoaiSP": "Phù hợp cho da dầu và da mụn nhạy cảm.",
             "CongDung": "Thanh lọc và kích thích tái tạo tế bào mới. Làn da được làm sạch nhẹ nhàng, loại bỏ bã nhờn dư thừa, tế bào c.hết & bụi bẩn, giúp thông thoáng làn da và cân bằng độ pH trên da."
-        }
+        },
+        "inCart": 0
     },
     {
         "Hinh": "TDC_PL2",
         "HinhFull": "TDC_PL2+",
         "Ten": "Tẩy tế bào chết Treatment 10% AHA",
-        "Gia": "1.100.000",
+        "Gia": "1100000",
         "ThuongHieu": "PAULAS CHOICE",
         "PhanLoai": "tdc",
         "ChiTiet": {
             "MoTa": "Sản phẩm được ví như loại “cocktail” tẩy da chết siêu đậm đặc giúp làm mịn và mờ đi những tổn hại có thể nhìn thấy được do ánh nắng mặt trời gây ra và những dấu hiệu lão hóa khác trên làn da. Sản phẩm giúp lấy lại sự rạng rỡ, trẻ trung một cách rõ ràng chỉ với 1 lần sử dụng.",
             "LoaiSP": "Cho mọi loại da.",
             "CongDung": "Bằng sự kết hợp đặc tính làm tinh chỉnh và tái tạo của các acid glycolic, lactic, malic and tartic (AHA), bạn sẽ nhìn thấy tông màu da bạn được tái tạo đáng kể chỉ sau 1 lần dùng. Peptides và Ceramides củng cố sự đàn hồi 1 cách tự nhiên. Hoa cúc, chiết xuất hạt nho, trà xanh và các chất chống oxi hóa bảo vệ làn da để chống lại những tổn hại do môi trường khác. Allantoin, chiết xuất yến mạch và cam thảo giúp làm dịu làn da một cách hoàn hảo."
-        }
+        },
+        "inCart": 0
     },
     {
         "Hinh": "Toner_BI",
         "HinhFull": "Toner_BI+",
         "Ten": "Dung dịch cân bằng da Bioderma Sebium Lotion",
-        "Gia": "466.000",
+        "Gia": "466000",
         "ThuongHieu": "BIODERMA",
         "PhanLoai": "toner",
         "ChiTiet": {
             "MoTa": "Dung dịch cân bằng da Sébium Lotion kích thích cân bằng độ pH trên da, tuyến bã nhờn và độ ẩm sâu trong da, tái cân bằng cho da dầu, da hỗn hợp và da nhạy cảm. Ngăn ngừa bít tắc lỗ chân lông gây mụn, cho da sáng khỏe.",
             "LoaiSP": "Nước hoa hồng cấp ẩm dành cho da hỗn hợp, da dầu và mụn.",
             "CongDung": "Phát minh độc quyền Fluidactiv điều chỉnh chất lượng bã nhờn khỏe mạnh ở mức độ sinh học, khiến lỗ chân lông ít tiết dầu và se nhỏ lại, đồng thời làm giảm tác nhân gây ra mụn. Phức hợp độc quyền D.A.F được chứng nhận tăng ngưỡng dung nạp và tăng cường đề kháng cho làn da nhạy cảm."
-        }
+        },
+        "inCart": 0
     },
     {
         "Hinh": "Toner_LR",
         "HinhFull": "Toner_LR+",
         "Ten": "Nước cân bằng LaRoche Posay Effaclar Astringent",
-        "Gia": "385.000",
+        "Gia": "385000",
         "ThuongHieu": "LAROCHE POSAY",
         "PhanLoai": "toner",
         "ChiTiet": {
             "MoTa": "Nước cân bằng giàu khoáng dành cho da nhạy cảm La Roche-Posay Soothing Lotion Sensitive Skin 200ml với với thành phần chính từ nước khoáng thiên nhiên, không cồn, không soap giúp làm dịu da, cân bằng độ pH và dưỡng ẩm cực tốt cho những làn da siêu mẫn cảm. Với Nước cân bằng dành cho da nhạy cảm La Roche-Posay Soothing Lotion Sensitive Skin, làn da của bạn sẽ được làm sạch, cân bằng độ pH, cấp ẩm tự nhiên, cho làn da mềm mại và mịn màng hơn. Soothing Lotion cũng chính là một phương pháp làm sạch lớp make-up hiệu quả và cân bằng da đặc biệt dành riêng loại da siêu nhạy cảm với thành phần chính từ nước khoáng thiên nhiên. Sản phẩm chính là giải pháp hợp lý cho những bạn có làn da siêu mẫn cảm, cực khó chọn toner.",
             "LoaiSP": "Nước cân bằng giàu khoáng dành cho da nhạy cảm La Roche-Posay Soothing Lotion Sensitive Skin với thành phần Selenium giúp làm dịu, bảo vệ và chống oxy hóa.",
             "CongDung": "Làm dịu da & cân bằng độ pH sau bước làm sạch. Cung cấp độ ẩm giúp da không bị khô căng."
-        }
+        },
+        "inCart": 0
     }
 ]

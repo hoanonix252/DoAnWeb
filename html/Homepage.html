@@ -96,7 +96,7 @@
         <!-- Nội dung -->
         <div class="main">
             <div class="banner-container">
-                <a href="./Detail_banner.html"><img src="../images/banner.jpg" alt=""></a>
+                <img src="../images/banner.jpg" alt="">
             </div>
 
             <hr style="margin: auto;" width="50%">
@@ -104,7 +104,7 @@
             <h2 class="main-text">SẢN PHẨM BÁN CHẠY</h2>
             <div class="product-container" >
 
-                <div class="product-box" ng-repeat="p in products">
+                <div class="product-box" ng-repeat="p in products | filter: { bestseller: 'bestseller' }">
                     <a href="ProductDetail.html?hinh={{p.Hinh}}">
                         <div>
                             <div class="img">
@@ -117,7 +117,7 @@
                         </div>
                     </a>
                     <div >
-                        <button class="product-button themvaogio" type="submit" name="themvaogio" id="themvaogio"
+                        <button class="product-button" type="submit" ng-click="addToCart(p)" name="themvaogio" id="themvaogio"
                             >Thêm vào giỏ</button>
                     </div>
                 </div>

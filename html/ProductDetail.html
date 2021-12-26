@@ -18,7 +18,6 @@
 <body ng-app="angularApp">
     <div class="container">
         <!--Header-->
-        <!--Header-->
         <div class="header">
             <div class="header-container">
                 
@@ -100,7 +99,7 @@
                 <div class="product__description-1">
                     <div class="detail__header">
                         <h1>{{selectedProduct.Ten}}</h1>
-                        <h2>{{selectedProduct.Gia}} </h2>
+                        <h2>{{selectedProduct.Gia}} VNĐ</h2>
                     </div>
                     <p>
                     <h3>Mô tả</h3>
@@ -125,7 +124,7 @@
                                 onclick="updateItemQuantity(document.getElementById('quantity'), 1)">
                         </div>
                         <div class="button-detail">
-                            <button class="themvaogio" ng-click="addToCart(selectedProduct)">
+                            <button ng-click="addToCart(selectedProduct)">
                                 <i class="fas fa-shopping-cart"></i> THÊM VÀO GIỎ HÀNG
                             </button>
                             
@@ -161,7 +160,7 @@
 
         </div>
     </div>
-    
+    <script src="../js/ThemVaoGio.js" async></script>
 </body>
 
 </html>
